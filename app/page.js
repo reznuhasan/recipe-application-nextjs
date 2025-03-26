@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HeroPart from "./components/HeroPart";
 
 export default function Home() {
   return (
-    <div>
-      
+    <div className="container mx-auto px-4 mt-[100px]">
+      <HeroPart/>
     </div>
   );
 }
