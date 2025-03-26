@@ -1,6 +1,7 @@
 import MatchingRecipe from "@/app/components/matchingRecipe";
 import recipes from "@/app/data/recipes";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SingleCategory({ params }) {
 
@@ -97,7 +98,11 @@ export default function SingleCategory({ params }) {
       <div className="my-12">
         <h2 className="text-3xl font-bold mb-8">You might also like</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {matchingRecipe.map(recipe=><MatchingRecipe key={recipe.title} recipe={recipe}/>)}
+          {matchingRecipe.map(recipe=>
+          <Link href={`/dist/recipes/${recipe.title}`} key={recipe.title}>
+            <MatchingRecipe  recipe={recipe}/>
+          </Link>
+          )}
         </div>
       </div>
     </div>
