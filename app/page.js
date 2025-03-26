@@ -1,5 +1,6 @@
 import HandCollections from "./components/handCollections";
 import HeroPart from "./components/HeroPart";
+import LastestRecipe from "./components/lastestRecipe";
 import PopularCategories from "./components/popularCategories";
 import SuperDelicious from "./components/superDelicious";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <SuperDelicious/>
       <PopularCategories/>
       <HandCollections/>
+      <LastestRecipe/>
     </div>
   );
 }
