@@ -1,3 +1,4 @@
+import HandCollections from "./components/handCollections";
 import HeroPart from "./components/HeroPart";
 import PopularCategories from "./components/popularCategories";
 import SuperDelicious from "./components/superDelicious";
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroPart/>
       <SuperDelicious/>
       <PopularCategories/>
+      <HandCollections/>
     </div>
   );
 }
