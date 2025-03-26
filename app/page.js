@@ -1,4 +1,5 @@
 import HeroPart from "./components/HeroPart";
+import PopularCategories from "./components/popularCategories";
 import SuperDelicious from "./components/superDelicious";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="container mx-auto px-4 mt-[100px]">
       <HeroPart/>
       <SuperDelicious/>
+      <PopularCategories/>
     </div>
   );
 }

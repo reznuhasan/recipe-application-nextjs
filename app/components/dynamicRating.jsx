@@ -1,6 +1,5 @@
 
 export default function DynamicRating({value}) {
-    console.log(value)
     const offsetColor=value*10;
     const offsetTransparent=100-offsetColor;
     return (

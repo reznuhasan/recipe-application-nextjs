@@ -11,7 +11,7 @@ export default function SuperDelicious() {
       <div className="grid md:grid-cols-3 gap-8">
         {
             items.map(item=>
-            <Link key={item.category_id} href={`/dist/recipes/${item.category_id}`}>
+            <Link key={item.category_id} href={`/dist/recipes/${item.title}`}>
             <SuperItems key={item.category_id} item={item}/>
             </Link>
         )

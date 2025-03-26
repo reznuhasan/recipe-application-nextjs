@@ -4,7 +4,7 @@ import ViewButton from './viewButton';
 
 export default async function HeroPart() {
    const objectData=recipes[0];
-   const {thumbnail,title,description,category_id}=objectData;
+   const {thumbnail,title,description}=objectData;
 
     return (
         <div className="mb-16 bg-orange-50">
@@ -23,7 +23,7 @@ export default async function HeroPart() {
                 <div>
                     <h1 className="text-4xl font-bold mb-4">{title}</h1>
                     <p className="text-gray-600 mb-4">{description}</p>
-                     <ViewButton path={`/dist/recipes/${category_id}`}
+                     <ViewButton path={`/dist/recipes/${title}`}
                         >View Recipe</ViewButton> 
                 </div>
             </div>
