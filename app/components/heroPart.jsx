@@ -23,7 +23,7 @@ export default async function HeroPart() {
                 <div>
                     <h1 className="text-4xl font-bold mb-4">{title}</h1>
                     <p className="text-gray-600 mb-4">{description}</p>
-                     <ViewButton path={`/recipes/${category_id}`}
+                     <ViewButton path={`/dist/recipes/${category_id}`}
                         >View Recipe</ViewButton> 
                 </div>
             </div>
