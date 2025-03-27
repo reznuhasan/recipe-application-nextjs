@@ -7,8 +7,9 @@ export default function SingleCategory({ params }) {
 
   // Use bracket notation to access params with a hyphen
   const categoryData = recipes.filter(recipe => decodeURIComponent(recipe.title) === decodeURIComponent(params['title']));
-  const category = categoryData[0]
+  const category = categoryData[0];
   const matchingRecipe = recipes.filter(recipe => category.category_id === recipe.category_id);
+
   return (
     <div className="container mx-auto px-4 py-20">
       <article>
@@ -66,13 +67,13 @@ export default function SingleCategory({ params }) {
 
         <h2 className="text-3xl font-bold mb-4">Here are the basics</h2>
         <p className="mb-8">
-          Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
+          Juicy meatballs brisket slammin&apos; baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
           greens. Wine technique snack skewers chuck excess. Oil heat slowly. slices natural delicious, set aside magic
           tbsp skillet, bay leaves brown centerpiece. fruit soften edges frond slices onion snack pork steem on wines
           excess technique cup; Cover smoker soy sauce.
         </p>
         <blockquote className="text-3xl font-bold italic text-center my-12 px-4">
-          "One cannot think well, love well, sleep well, if one has not dined well."
+          &quot;One cannot think well, love well, sleep well, if one has not dined well.&quot;
         </blockquote>
         <p className="text-center text-gray-600 mb-12">— {category.title}</p>
         <h2 className="text-3xl font-bold mb-4">In the kitchen</h2>
@@ -89,7 +90,7 @@ export default function SingleCategory({ params }) {
           className="w-full h-auto mb-8 rounded-lg max-w-xl mx-auto"
         />
         <p className="mb-8">
-          Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
+          Juicy meatballs brisket slammin&apos; baked shoulder. Juicy smoker soy sauce burgers brisket. polenta mustard hunk
           greens. Wine technique snack skewers chuck excess. Oil heat slowly. slices natural delicious, set aside magic
           tbsp skillet, bay leaves brown centerpiece. fruit soften edges frond slices onion snack pork steem on wines
           excess technique cup; Cover smoker soy sauce.
