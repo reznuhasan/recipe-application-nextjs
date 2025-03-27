@@ -1,5 +1,5 @@
 import HandCollections from "./components/handCollections";
-import HeroPart from "./components/HeroPart";
+import HeroPart from "./components/heroPart";
 import LastestRecipe from "./components/lastestRecipe";
 import PopularCategories from "./components/popularCategories";
 import SuperDelicious from "./components/superDelicious";
